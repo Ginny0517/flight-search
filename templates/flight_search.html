@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="#">
+    <div>
+        <label for="code">Code:</label>
+        <input type="text" name="code" id="code" required>
+    </div>
+      <div>
+          <input type="submit" value="submit">
+      </div>
+  </form>
+<h1>Search Result</h1>
+{% if flight %}
+    <p>Price: {{ flight.price }}</p>
+    <p>Origin City: {{ flight.origin_city }}</p>
+    <p>Origin Airport: {{ flight.origin_airport }}</p>
+    <p>Destination City: {{ flight.destination_city }}</p>
+    <p>Destination Airport: {{ flight.destination_airport }}</p>
+    <p>Out Date: {{ flight.out_date }}</p>
+    <p>Return Date: {{ flight.return_date }}</p>
+    <p>Stop Overs: {{ flight.stop_overs }}</p>
+    <p>Via City: {{ flight.via_city }}</p>
+    <p>Link: {{ flight.link }}</p>
+{% else %}
+    <p>No flight found</p>
+{% endif %}
+</body>
+</html>
