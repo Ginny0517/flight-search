@@ -16,18 +16,22 @@
   </form>
 <h1>Search Result</h1>
 {% if flight %}
-    <p>Price: {{ flight.price }}</p>
-    <p>Origin City: {{ flight.origin_city }}</p>
-    <p>Origin Airport: {{ flight.origin_airport }}</p>
-    <p>Destination City: {{ flight.destination_city }}</p>
-    <p>Destination Airport: {{ flight.destination_airport }}</p>
-    <p>Out Date: {{ flight.out_date }}</p>
-    <p>Return Date: {{ flight.return_date }}</p>
-    <p>Stop Overs: {{ flight.stop_overs }}</p>
-    <p>Via City: {{ flight.via_city }}</p>
-    <p>Link: {{ flight.link }}</p>
+    {{ flight }}
+<!--    <p>Price: {{ flight.price }}</p>-->
+<!--    <p>Origin City: {{ flight.origin_city }}</p>-->
+<!--    <p>Origin Airport: {{ flight.origin_airport }}</p>-->
+<!--    <p>Destination City: {{ flight.destination_city }}</p>-->
+<!--    <p>Destination Airport: {{ flight.destination_airport }}</p>-->
+<!--    <p>Out Date: {{ flight.out_date }}</p>-->
+<!--    <p>Return Date: {{ flight.return_date }}</p>-->
+<!--    <p>Stop Overs: {{ flight.stop_overs }}</p>-->
+<!--    <p>Via City: {{ flight.via_city }}</p>-->
+<!--    <p>Link: {{ flight.link }}</p>-->
 {% else %}
     <p>No flight found</p>
 {% endif %}
+<div>
+    <button><a href="{{ url_for('logout') }}">logout</a></button>
+</div>
 </body>
 </html>
