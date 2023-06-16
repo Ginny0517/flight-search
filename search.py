@@ -4,7 +4,7 @@ import datetime
 
 TEQUILA_ENDPOINT = "https://api.tequila.kiwi.com/v2"
 FLIGHT_SEARCH_ENDPOINT = "https://api.tequila.kiwi.com"
-SEARCH_API = "04vLsODNkjgwvWBD_6c6xXG6v74zsSHw"
+SEARCH_API = ""
 CITY_FROM = "TPE"
 
 
